@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo-title">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Student Management System</h1>
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#admin">Admin</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#student">Student</a>
+            <a href="#reports">Reports</a>
+        </nav>
+    </header>
+
+    
+    <section class="hero" id="home">
+        <h2>Modern & Secure Student Record Management</h2>
+        <p>Manage students, faculty, attendance, results and reports efficiently.</p>
+    </section>
+
+   
+    <section class="login-section">
+
+         <div class="login-card" id="admin">
+            <h3>admin Login</h3>
+            <input type="text" id="adminUser" placeholder="Name">
+            <input type="password" id="adminPass" placeholder="Enter Password">
+            <button onclick="adminLogin()">Login</button>
+        </div>
+
+        
+        <div class="login-card" id="student">
+            <h3>student Login</h3>
+            <input type="text" id="adminUser" placeholder="Enter Roll No">
+            <input type="password" id="adminPass" placeholder="Enter Password">
+            <button onclick="adminLogin()">Login</button>
+        </div>
+
+        
+        <div class="login-card" id="faculty">
+            <h3>Faculty Login</h3>
+            <input type="text" id="facultyUser" placeholder="Enter Faculty Name">
+            <input type="password" id="facultyPass" placeholder="Enter Password">
+            <button onclick="facultyLogin()">Login</button>
+        </div>
+
+    </section>
+
+    
+    <section class="modules" id="student">
+        <h2>Student Module</h2>
+        <div class="card-container">
+            <div class="card">
+                <ul>
+                    <li>View Academic Profile</li>
+                    <li>Check Attendance</li>
+                    <li>View Exam Results</li>
+                    <li>Download Materials</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="modules">
+        <h2>Faculty Module</h2>
+        <div class="card-container">
+            <div class="card">
+                <ul>
+                    <li>Manage Attendance</li>
+                    <li>Enter Student Marks</li>
+                    <li>Upload Study Materials</li>
+                    <li>View Assigned Subjects</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="modules">
+        <h2>Admin Module</h2>
+        <div class="card-container">
+            <div class="card">
+                <ul>
+                    <li>Manage Students & Faculty</li>
+                    <li>Assign Subjects</li>
+                    <li>Generate Reports</li>
+                    <li>Monitor Activities</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="modules" id="reports">
+        <h2>Reports</h2>
+        <div class="card-container">
+            <div class="card">
+                <ul>
+                    <li>Student Attendance Report</li>
+                    <li>Student Marks Report</li>
+                    <li>Backlog Subjects Report</li>
+                    <li>Overall Performance Analysis</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Student Management System | Designed by Yashwa
+    </footer>
+
+    
+    <script>
+        function adminLogin() {
+            let pass = document.getElementById("adminPass").value;
+            if (pass === "student@123") {
+                alert("Admin Login Successful!");
+            } else {
+                alert("Wrong Password! Use student@123");
+            }
+        }
+
+        function facultyLogin() {
+            let pass = document.getElementById("facultyPass").value;
+            if (pass === "teacher@123") {
+                alert("Faculty Login Successful!");
+            } else {
+                alert("Wrong Password! Use teacher@123");
+            }
+        }
+    </script>
+
+</body>
+</html>
